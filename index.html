@@ -15,6 +15,7 @@
         
 			<a-assets>
 				<a-asset-item id="cake" src="./model.gltf"></a-asset-item>
+				<audio id="bday" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/bday.mp3"></audio>
 			</a-assets>
         
 			<a-marker-camera preset="hiro">
@@ -23,7 +24,8 @@
 				</a-entity>
 				<a-entity geometry="primitive: box" material="color: yellow" position="0 0.5 -10"></a-entity>
 				<a-entity text="value: CLAU" material="color: red"></a-entity>
-				<a-entity text-geometry="value: SILVANA"></a-entity>
+				<a-entity text-geometry="value: SILVANA" sound="src:#bday; autoplay: true; loop: true"></a-entity>
+				<!-- <a-entity text-geometry="value: SILVANA" sound="src:#bday; autoplay: true; loop: true;  on:click"></a-entity> -->
 				<!-- <a-entity gltf-model="#cake"></a-entity> -->
 			</a-marker-camera>
     			
